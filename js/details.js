@@ -1,5 +1,7 @@
 console.log("Hello from details.js");
 
+// https://docs.noroff.dev/docs/v2/blog/posts#single-post
+
 const queryString = window.location.search;
 const id = new URLSearchParams(queryString).get('id');
 if (!id) { window.location = "../index.html"; }

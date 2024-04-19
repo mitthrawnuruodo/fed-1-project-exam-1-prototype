@@ -1,5 +1,7 @@
 //console.log("Hello from script.js")
 
+// https://docs.noroff.dev/docs/v2/blog/posts#all-posts
+
 async function getPosts() {
     const api = "https://v2.api.noroff.dev/blog/posts/xiaolasse";
 

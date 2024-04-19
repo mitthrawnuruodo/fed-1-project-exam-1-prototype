@@ -1,5 +1,7 @@
 // console.log("Hello from login.js")
 
+// https://docs.noroff.dev/docs/v2/auth/login
+
 const loginForm = document.querySelector("#login");
 
 loginForm.addEventListener("submit", (event) => {
