@@ -1,4 +1,4 @@
-console.log("Hello from script.js")
+//console.log("Hello from script.js")
 
 async function getPosts() {
     const api = "https://v2.api.noroff.dev/blog/posts/xiaolasse";
@@ -14,7 +14,7 @@ function listPosts (posts) {
     const out = document.getElementById("posts");
     let output = "";
     for (const post of posts) {
-        console.log(post);
+        //console.log(post);
         output += formatPost(post);
     }
     out.innerHTML = output;
@@ -24,8 +24,7 @@ function formatPost(item) {
     return `
     <div>
         <h2>${item.title}</h2>
-        <div>${item.body}</div>
-        <div>${item.id}</div>
+        <a href="post/?id=${item.id}">Read more</a>
     </div>
     `;
 }
