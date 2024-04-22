@@ -2,6 +2,11 @@
 
 // https://docs.noroff.dev/docs/v2/blog/posts#all-posts
 
+window.addEventListener('load', (event) => {
+    //console.log('The page has fully loaded');
+    getPosts();
+});
+
 async function getPosts() {
     const api = "https://v2.api.noroff.dev/blog/posts/xiaolasse";
 
@@ -30,8 +35,6 @@ function formatPost(item) {
     </div>
     `;
 }
-
-getPosts();
 
 async function createPost() {
 
