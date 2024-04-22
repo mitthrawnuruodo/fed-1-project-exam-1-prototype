@@ -7,7 +7,10 @@ const id = new URLSearchParams(queryString).get('id');
 if (!id) { window.location = "../index.html"; }
 console.log(id);
 
-getBlogPost(id);
+window.addEventListener('load', (event) => {
+    //console.log('The page has fully loaded');
+    getBlogPost(id);
+});
 
 async function getBlogPost(id) {
     const api = `https://v2.api.noroff.dev/blog/posts/xiaolasse/${id}`;
