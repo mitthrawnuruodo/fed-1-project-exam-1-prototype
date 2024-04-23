@@ -16,7 +16,7 @@ export function isLoggedIn () {
           console.log("Logging out?");
           localStorage.removeItem("username");
           localStorage.removeItem("token");
-          window.location = "/index.html"; // Automatic redirect, check if this works on Netlify?
+          window.location.reload(); // Refresh page
       });
       out.appendChild(btn);
       //return true;

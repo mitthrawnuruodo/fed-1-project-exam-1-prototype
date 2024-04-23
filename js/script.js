@@ -1,7 +1,7 @@
 import { isLoggedIn } from "./admin.js";
 
+console.clear();
 //console.log("Hello from script.js")
-
 // https://docs.noroff.dev/docs/v2/blog/posts#all-posts
 
 window.addEventListener('load', (event) => {
@@ -15,12 +15,13 @@ async function getPosts() {
 
     fetch (api)
     .then (response => response.json())
-    .then (obj => listPosts(obj.data));
-
+    .then (obj => listPosts(obj.data))
+    .catch(error => console.error(error.message));
 }
 
 function listPosts (posts) {
     //console.log(posts);
+    console.log(posts.length);
     const out = document.getElementById("posts");
     let output = "";
     for (const post of posts) {

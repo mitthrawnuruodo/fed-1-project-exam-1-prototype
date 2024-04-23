@@ -39,6 +39,7 @@ async function getToken(body) {
             localStorage.setItem("token", obj.data.accessToken);
             window.location = "../index.html"; // Automatic redirect
         } else {
+            document.querySelector("p#response").innerHTML = "Not correct username and password";
             throw new Error(response.statusText);
         }
     } catch (error) {
