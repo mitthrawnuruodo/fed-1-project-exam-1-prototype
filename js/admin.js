@@ -11,7 +11,7 @@ export function isLoggedIn () {
       out.innerHTML = `Welcome, <strong>${username}</strong><br>`;
       let btn = document.createElement("button");
       btn.setAttribute("id", "logout");
-      btn.innerText = "Logging out?"
+      btn.innerText = "Log out"
       btn.addEventListener("click", () => {
           console.log("Logging out?");
           localStorage.removeItem("username");
