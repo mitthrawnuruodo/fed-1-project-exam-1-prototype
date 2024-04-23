@@ -1,3 +1,5 @@
+# Notes to self
+
 test-image: 
 https://geek.no/noroff/stuff/media/dill.jpg
 
