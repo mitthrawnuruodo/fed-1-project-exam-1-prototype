@@ -1,5 +1,7 @@
 # Notes to self
 
+Netlify: https://teal-yeot-75b756.netlify.app/
+
 test-image: 
 https://geek.no/noroff/stuff/media/dill.jpg
 
