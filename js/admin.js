@@ -28,6 +28,7 @@ export function isLoggedIn () {
 }
 
 async function createPost() {
+  // https://docs.noroff.dev/docs/v2/blog/posts#create-post
 
 /*
   //let accessToken = <sett inn din token, feks. ved å hente fra LocalStorage>;
@@ -44,6 +45,10 @@ async function createPost() {
 }
 
 async function updatePost() {
+  // https://docs.noroff.dev/docs/v2/blog/posts#update-post
+
 }
 async function deletePost() {
+  // https://docs.noroff.dev/docs/v2/blog/posts#delete-post
+
 }
