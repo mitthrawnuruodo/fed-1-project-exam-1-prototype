@@ -1,14 +1,16 @@
-console.log("Hello from details.js");
+import { isLoggedIn } from "./admin.js";
 
+// console.log("Hello from details.js");
 // https://docs.noroff.dev/docs/v2/blog/posts#single-post
 
 const queryString = window.location.search;
 const id = new URLSearchParams(queryString).get('id');
 if (!id) { window.location = "../index.html"; }
-console.log(id);
+//console.log(id);
 
 window.addEventListener('load', (event) => {
     //console.log('The page has fully loaded');
+    isLoggedIn();
     getBlogPost(id);
 });
 
@@ -22,7 +24,7 @@ async function getBlogPost(id) {
 function listData (post) {
     console.log(post);
     document.title = post.title;
-    document.body.innerHTML = `
+    document.querySelector("main").innerHTML = `
         ${(post.media.url)?"<img src='"+post.media.url+"' alt='"+post.media.url+"' width='200'>":""}
         <h1>${post.title}</h1>
         <div>${post.body}<div>
@@ -31,4 +33,5 @@ function listData (post) {
         ${(post.created!==post.updated)?"<div>Updated "+post.updated+"</div>":""}
         <div><a href="../index.html">Back</a></div>
     `;
+
 }

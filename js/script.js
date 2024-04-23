@@ -1,3 +1,5 @@
+import { isLoggedIn } from "./admin.js";
+
 //console.log("Hello from script.js")
 
 // https://docs.noroff.dev/docs/v2/blog/posts#all-posts
@@ -5,6 +7,7 @@
 window.addEventListener('load', (event) => {
     //console.log('The page has fully loaded');
     getPosts();
+    isLoggedIn();
 });
 
 async function getPosts() {

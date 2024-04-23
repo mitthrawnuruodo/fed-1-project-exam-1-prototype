@@ -32,7 +32,7 @@ async function getToken(body) {
         //console.log(response);
         if (response.ok){
             const obj = await response.json();
-            //console.log("obj: ", obj);
+            console.log("obj: ", obj);
             //console.log("obj.data.name: ", obj.data.name);
             //console.log("obj.data.accessToken: ", obj.data.accessToken);
             localStorage.setItem("username", obj.data.name);
