@@ -12,7 +12,6 @@ window.addEventListener('load', (event) => {
 
 async function getPosts() {
     const api = "https://v2.api.noroff.dev/blog/posts/xiaolasse";
-
     fetch (api)
     .then (response => response.json())
     .then (obj => listPosts(obj.data))
