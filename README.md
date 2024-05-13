@@ -18,4 +18,5 @@ Create Post:
 }
 ```
 
-Tester en branch
+Testing linking to an image on Netlify: https://teal-yeot-75b756.netlify.app/media/beer-test.heic
+(Safari shows image, Netflix downloads file)
