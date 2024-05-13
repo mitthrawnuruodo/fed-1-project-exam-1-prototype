@@ -18,5 +18,7 @@ Create Post:
 }
 ```
 
-Testing linking to an image on Netlify: https://teal-yeot-75b756.netlify.app/media/beer-test.heic
-(Safari shows image, Netflix downloads file)
+Testing linking to an heic-image on Netlify: https://teal-yeot-75b756.netlify.app/media/beer-test.heic
+* Safari shows image, both when clicking the link and when it's the src of an img-tag
+* Firefox Dev Ed and Chrome downloads image when clicking the link, and shows alt text when used as src for an img-tag
+* Sounds about par for expectations: https://caniuse.com/heif
